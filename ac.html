@@ -1,0 +1,234 @@
+<?php 
+
+    require_once("connection.php");
+    $query = "select * from 2019_results_winning_candidate";
+    $result = mysqli_query($con,$query);
+    die($result);
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Indian Election Information</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top" data-scrollto-offset="0">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center scrollto me-auto me-lg-0">
+        <h4>Indian Election Information<span>.</span></h4>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">About</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact Us</a></li>
+          <li><a class="nav-link scrollto" href="voters.html">For Voters</a></li>
+          <li class="dropdown"><a href="#"><span>Results</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="pc.php">Lok Sabha Elections<br>(PC)</a></li>
+              <li><a href="ac.php">Vidhan Sabha Elections<br>(AC)</a></li>
+              <li><a href="summary.html">Summary results</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="index.html#recent-blog-posts">Blog</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle d-none"></i>
+      </nav><!-- .navbar -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Blog Section ======= -->
+    <section class="inner-page">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header" data-aos="fade-up">
+          <h2>Vidhan Sabha Elections</h2><hr>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+            <div class="row gy-4" data-aos="fade-up">
+              <h3><u>State Assembly Elections</u></h3>
+              <div class="col-lg-12 order-2 order-lg-1">
+                <p style="text-align: justify;">
+                  India is regionally divided into States (and Union Territories) and each State has a Governor who is the state's head, but de facto executive authority rests with the Chief Minister who is the leader of the party or political alliance that has won a majority in the regional elections otherwise known as State Assembly Elections that exercises executive powers in that State. The respective State's Chief Minister has executive powers within the State and works jointly with the Prime Minister of India or their ministers on matters that require both State and Central attention. Some Union Territories also elect an Assembly and have a territorial government and other (mainly smaller) Union Territories are governed by a person appointed by the President of India.
+                </p>
+                <p style="text-align: justify;">
+                 The President of India monitors the rule of law through their appointed governors in each State and on their recommendation can take over the executive powers from the Chief Minister of the State, temporarily when the elected representatives of the State government has failed to create a peaceful environment and has deteriorated into chaos. The President of India dissolves the existing State government if necessary, and a new election is conducted. 
+                </p>
+                <p style="text-align: justify;">
+                  Members of State Legislative Assembly, are elected directly by voting, from a set of candidates who stands in their respective constituencies. Every adult citizen of India can vote only in their constituency. Candidates who win the State Legislative Assemblies elections are called 'Member of Legislative Assembly' (MLA) and hold their seats for five years or until the body is dissolved by the Governor. The house meets in the respective state, on matters relating to the creation of new laws, removing or improving the existing laws that affect all citizens living in that state.
+                  The total strength of each assembly depends on each State, mostly based on size and population. Similar to the Lok Sabha elections, the leader of the majority party/alliance takes oath as Chief Minister of the State.
+                </p>
+              </div>
+            </div>
+            <br><br>
+          </div>
+
+          <div class="container" data-aos="fade-up">
+            <div class="row gy-4" data-aos="fade-up">
+              <h3><u>State Assembly Elections</u></h3>
+              <div class="col-lg-2 order-2 order-lg-1">
+                <a href="gj.php" style="color: #148FA8; text-align: center; padding: 10%; background-color: #dddddd; border-radius: 5px;">Gujarat</a>
+              </div>
+              <div class="col-lg-2 order-2 order-lg-1">
+                <a href="up.php" style="color: #148FA8; text-align: center;">&nbsp;&nbsp;&nbsp;Uttar<br>Pradesh</a>
+              </div>
+              <div class="col-lg-2 order-2 order-lg-1">
+                <a href="mr.php" style="color: #148FA8; text-align: center; padding: 10%; background-color: #dddddd;border-radius: 5px;">Manipur</a>
+              </div>
+              <div class="col-lg-2 order-2 order-lg-1">
+                <a href="ut.php" style="color: #148FA8; text-align: center;">Uttarakhand</a>
+              </div>
+              <div class="col-lg-2 order-2 order-lg-1">
+                <a href="pb.php" style="color: #148FA8; text-align: center; padding: 10%; background-color: #dddddd;border-radius: 5px;">Punjab</a>
+              </div>
+              <div class="col-lg-2 order-2 order-lg-1">
+                <a href="goa.php" style="color: #148FA8; text-align: center;">Goa</a>
+              </div>
+            </div>
+            <br><br>
+          </div>
+        <!-- <div class="container" data-aos="fade-up">
+            <div class="row">
+                <div class="col m-auto">
+                    <div class="card mt-5">
+                        <table class="table table-bordered">
+                            <tr>
+                                <th> State </th>
+                                <th> Constituency </th>
+                                <th> Votes </th>
+                                <th> Percentage </th>
+                                <th> Party  </th>
+                                <th> Candidate </th>
+                            </tr>
+
+                            <?php 
+                              while($row=mysqli_fetch_assoc($result))
+                              {
+                                $State = $row['State'];
+                                $Constituency = $row['Constituency'];
+                                $Votes = $row['Votes'];
+                                $Percentage = $row['Percentage'];
+                                $Party = $row['Party'];
+                                $Candidate = $row['Candidate'];
+                            ?>
+
+                            <tr>
+                                <td><?php echo $State ?></td>
+                                <td><?php echo $Constituency ?></td>
+                                <td><?php echo $Votes ?></td>
+                                <td><?php echo $Percentage ?></td>
+                                <td><?php echo $Party ?></td>
+                                <td><?php echo $Candidate ?></td>
+                            </tr> 
+
+                            <?php 
+                              }  
+                            ?>                                                                    
+                              
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+      </div>
+    </section><!-- End Inner Page -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-10 col-md-12">
+            <div class="footer-info">
+              <h3>Indian Election Information</h3>
+              <p>
+                Darshan University<br>
+                Rajkot, Gujarat, India<br><br>
+                <strong>Phone:</strong> +91 81417 50052<br>
+                <strong>Email:</strong> 190540107198@darshan.ac.in<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>Indian Election Information</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            Designed by Soni Niloni Mahesh
+          </div>
+        </div>
+
+        <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
